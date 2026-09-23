@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="MoodNature connects your mood with the beauty of nature, animals, oceans, planets and space."
+    >
+
+    <meta
+        name="keywords"
+        content="MoodNature, mood, nature, animals, ocean, planets, space, positive thoughts"
+    >
+
+    <meta
+        name="author"
+        content="MoodNature"
+    >
+
+    <title>MoodNature | Let Nature Answer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         HEADER
+         ================================================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            🌿 MoodNature
+        </div>
+
+        <nav class="navbar">
+
+            <a href="#home">
+                Home
+            </a>
+
+            <a href="#mood">
+                Your Mood
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="#explore">
+                Explore
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =================================================
+         HOME SECTION
+         ================================================= -->
+
+    <section
+        id="home"
+        class="home-section"
+    >
+
+        <div class="home-content">
+
+            <p class="small-heading">
+                🌿 Welcome to MoodNature
+            </p>
+
+            <h1>
+                Let Nature Answer
+            </h1>
+
+            <p>
+                Sometimes nature has the words
+                we cannot find ourselves.
+            </p>
+
+            <a
+                href="#mood"
+                class="main-button"
+            >
+                Discover Your Nature Message 🌱
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         MOOD SECTION
+         ================================================= -->
+
+    <section
+        id="mood"
+        class="mood-section"
+    >
+
+        <div class="section-heading">
+
+            <p class="small-heading">
+                🌱 Your Feelings Matter
+            </p>
+
+            <h2>
+                How are you feeling today?
+            </h2>
+
+            <p>
+                Choose the mood that best describes
+                your current feeling.
+            </p>
+
+        </div>
+
+
+        <!-- MOOD CARDS -->
+
+        <div class="mood-container">
+
+
+            <div
+                class="mood-card"
+                data-mood="good"
+            >
+
+                <span class="mood-emoji">
+                    😊
+                </span>
+
+                <h3>
+                    Good
+                </h3>
+
+                <p>
+                    Feeling positive and happy
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="bad"
+            >
+
+                <span class="mood-emoji">
+                    😔
+                </span>
+
+                <h3>
+                    Bad
+                </h3>
+
+                <p>
+                    Having a difficult moment
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="sad"
+            >
+
+                <span class="mood-emoji">
+                    😢
+                </span>
+
+                <h3>
+                    Sad
+                </h3>
+
+                <p>
+                    Feeling low or emotional
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="angry"
+            >
+
+                <span class="mood-emoji">
+                    😠
+                </span>
+
+                <h3>
+                    Angry
+                </h3>
+
+                <p>
+                    Feeling frustrated or upset
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="excited"
+            >
+
+                <span class="mood-emoji">
+                    🤩
+                </span>
+
+                <h3>
+                    Excited
+                </h3>
+
+                <p>
+                    Full of energy and excitement
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="lonely"
+            >
+
+                <span class="mood-emoji">
+                    🥺
+                </span>
+
+                <h3>
+                    Lonely
+                </h3>
+
+                <p>
+                    Feeling alone or disconnected
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="neutral"
+            >
+
+                <span class="mood-emoji">
+                    😐
+                </span>
+
+                <h3>
+                    Neutral
+                </h3>
+
+                <p>
+                    Feeling calm or normal
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="peaceful"
+            >
+
+                <span class="mood-emoji">
+                    😌
+                </span>
+
+                <h3>
+                    Peaceful
+                </h3>
+
+                <p>
+                    Feeling calm and relaxed
+                </p>
+
+            </div>
+
+
+            <div
+                class="mood-card"
+                data-mood="stressed"
+            >
+
+                <span class="mood-emoji">
+                    😰
+                </span>
+
+                <h3>
+                    Stressed
+                </h3>
+
+                <p>
+                    Feeling pressured or overwhelmed
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SITUATION INPUT
+             ================================================= -->
+
+        <div class="situation-box">
+
+            <h3>
+                Tell Nature What You Are Feeling
+            </h3>
+
+            <p>
+                Write a few words about your situation.
+            </p>
+
+            <textarea
+                id="situation"
+                maxlength="500"
+                placeholder="Tell us what is on your mind..."
+            ></textarea>
+
+            <div class="character-counter">
+
+                <span id="characterCount">
+                    0
+                </span>
+
+                / 500
+
+            </div>
+
+
+            <button
+                id="continueButton"
+                class="main-button"
+                type="button"
+            >
+
+                Let Nature Answer 🌿
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         EXPERIENCE SECTION
+         ================================================= -->
+
+    <section
+        id="experience"
+        class="experience-section"
+    >
+
+        <div class="experience-heading">
+
+            <p class="small-heading">
+                🌿 Your Nature Experience
+            </p>
+
+            <h2>
+                A moment of nature created around your mood.
+            </h2>
+
+        </div>
+
+
+        <div class="experience-card">
+
+
+            <!-- IMAGE SIDE -->
+
+            <div class="experience-image">
+
+                <img
+                    id="moodImage"
+                    src="images/nature/forest.jpg"
+                    alt="Nature experience"
+                >
+
+            </div>
+
+
+            <!-- CONTENT SIDE -->
+
+            <div class="experience-content">
+
+                <p
+                    id="experienceTitle"
+                    class="experience-mood"
+                >
+                    Your mood: Not selected
+                </p>
+
+
+                <h2 id="experienceHeading">
+                    A Little Message From Nature
+                </h2>
+
+
+                <!-- PERSONAL MESSAGE -->
+
+                <div class="nature-message">
+
+                    <p id="personalMessage">
+                        Choose a mood above and tell us
+                        about your situation to receive
+                        your nature message.
+                    </p>
+
+                </div>
+
+
+                <!-- POEM -->
+
+                <div class="poem-box">
+
+                    <h3>
+                        🌿 A Poem For You
+                    </h3>
+
+                    <p id="poem">
+                        Nature has a quiet way of reminding
+                        us that every moment is part of a
+                        larger journey.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         EXPLORE SECTION
+         ================================================= -->
+
+    <section
+        id="explore"
+        class="explore-section"
+    >
+
+        <div class="section-heading">
+
+            <p class="small-heading">
+                🌎 Explore Nature
+            </p>
+
+            <h2>
+                Beauty Beyond Your Mood
+            </h2>
+
+            <p>
+                Explore the beauty of animals,
+                oceans, planets and space.
+            </p>
+
+        </div>
+
+
+        <!-- NATURE -->
+
+        <div class="explore-category">
+
+            <h3>
+                🌳 Nature & Animals
+            </h3>
+
+            <div class="explore-grid">
+
+                <img
+                    src="images/nature/bird.jpg"
+                    alt="Bird in nature"
+                >
+
+                <img
+                    src="images/nature/deer.jpg"
+                    alt="Deer in nature"
+                >
+
+                <img
+                    src="images/nature/elephant.jpg"
+                    alt="Elephant"
+                >
+
+                <img
+                    src="images/nature/forest.jpg"
+                    alt="Forest"
+                >
+
+                <img
+                    src="images/nature/mountains.jpg"
+                    alt="Mountains"
+                >
+
+                <img
+                    src="images/nature/tiger.jpg"
+                    alt="Tiger"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- OCEAN -->
+
+        <div class="explore-category">
+
+            <h3>
+                🌊 Ocean
+            </h3>
+
+            <div class="explore-grid">
+
+                <img
+                    src="images/ocean/coral.jpg"
+                    alt="Coral ocean"
+                >
+
+                <img
+                    src="images/ocean/ocean.jpg"
+                    alt="Ocean"
+                >
+
+                <img
+                    src="images/ocean/waves.jpg"
+                    alt="Ocean waves"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- PLANETS -->
+
+        <div class="explore-category">
+
+            <h3>
+                🪐 Planets
+            </h3>
+
+            <div class="explore-grid">
+
+                <img
+                    src="images/planets/earth.jpg"
+                    alt="Earth planet"
+                >
+
+                <img
+                    src="images/planets/jupiter.jpg"
+                    alt="Jupiter planet"
+                >
+
+                <img
+                    src="images/planets/mars.jpg"
+                    alt="Mars planet"
+                >
+
+                <img
+                    src="images/planets/saturn.jpg"
+                    alt="Saturn planet"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- SPACE -->
+
+        <div class="explore-category">
+
+            <h3>
+                🚀 Space
+            </h3>
+
+            <div class="explore-grid">
+
+                <img
+                    src="images/space/earth-space.jpg"
+                    alt="Earth from space"
+                >
+
+                <img
+                    src="images/space/galaxy.jpg"
+                    alt="Galaxy"
+                >
+
+                <img
+                    src="images/space/nebula.jpg"
+                    alt="Nebula"
+                >
+
+                <img
+                    src="images/space/stars.jpg"
+                    alt="Stars in space"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         FOOTER
+         ================================================= -->
+
+    <footer class="footer">
+
+        <h3>
+            🌿 MoodNature
+        </h3>
+
+        <p>
+            Let nature answer what your heart is feeling.
+        </p>
+
+        <p>
+            © 2026 MoodNature. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- =================================================
+         JAVASCRIPT
+         ================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

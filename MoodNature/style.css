@@ -1,0 +1,943 @@
+/* =====================================================
+   MOODNATURE WEBSITE
+   COMPLETE CLEAN CSS
+   ===================================================== */
+
+
+/* =====================================================
+   BASIC RESET
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F4EC;
+    color: #172A3A;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.header {
+    width: 100%;
+    min-height: 76px;
+
+    background-color: #163A2A;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 4%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #B7D9B5;
+}
+
+
+/* =====================================================
+   GENERAL
+   ===================================================== */
+
+section {
+    width: 100%;
+}
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    color: #163A2A;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   HOME
+   ===================================================== */
+
+.home-section {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(247, 244, 236, 0.72),
+            rgba(247, 244, 236, 0.72)
+        ),
+        url("images/nature/forest.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    max-width: 850px;
+    padding: 45px;
+
+    background-color: rgba(255, 255, 255, 0.90);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.home-content h1 {
+    color: #163A2A;
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   BUTTON
+   ===================================================== */
+
+.main-button {
+    display: inline-block;
+
+    background-color: #1F6B4A;
+    color: white;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition:
+        transform 0.3s,
+        background-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.main-button:hover {
+    background-color: #145237;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   MOOD SECTION
+   ===================================================== */
+
+.mood-section {
+    padding: 90px 5%;
+    background-color: #F7F4EC;
+}
+
+.mood-container {
+    max-width: 1150px;
+
+    margin: 0 auto 55px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.mood-card {
+    background-color: white;
+
+    border-radius: 20px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    border: 3px solid transparent;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s,
+        background-color 0.3s;
+}
+
+.mood-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #9BC5A6;
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.13);
+}
+
+.mood-card.selected {
+    border-color: #1F6B4A;
+
+    background-color: #E5F1E7;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(31, 107, 74, 0.20);
+}
+
+.mood-emoji {
+    display: block;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.mood-card h3 {
+    color: #163A2A;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.mood-card p {
+    color: #52615A;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   SITUATION
+   ===================================================== */
+
+.situation-box {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.09);
+}
+
+.situation-box h3 {
+    color: #163A2A;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.situation-box > p {
+    color: #52615A;
+    margin-bottom: 20px;
+}
+
+#situation {
+    width: 100%;
+
+    min-height: 150px;
+
+    resize: vertical;
+
+    padding: 18px;
+
+    border: 2px solid #C8D8CD;
+
+    border-radius: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 17px;
+
+    color: #172A3A;
+
+    outline: none;
+}
+
+#situation:focus {
+    border-color: #1F6B4A;
+}
+
+.character-counter {
+    text-align: right;
+
+    color: #68776F;
+
+    font-size: 14px;
+
+    margin: 7px 3px 20px;
+}
+
+
+/* =====================================================
+   EXPERIENCE SECTION
+   ===================================================== */
+
+.experience-section {
+    width: 100%;
+
+    padding: 70px 5% 90px;
+
+    background-image:
+        linear-gradient(
+            rgba(247, 244, 236, 0.82),
+            rgba(247, 244, 236, 0.82)
+        ),
+        url("images/nature/forest.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+}
+
+.experience-heading {
+    max-width: 900px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.experience-heading h2 {
+    color: #163A2A;
+    font-size: 38px;
+}
+
+
+/* =====================================================
+   EXPERIENCE CARD
+   ===================================================== */
+
+.experience-card {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: start;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =====================================================
+   LEFT IMAGE AREA
+   ===================================================== */
+
+/*
+   IMPORTANT:
+
+   The image area does NOT have a fixed height.
+
+   This allows the uploaded image to keep
+   its original proportions.
+*/
+
+.experience-image {
+    width: 100%;
+
+    height: auto;
+
+    min-width: 0;
+
+    min-height: 0;
+
+    margin: 0;
+
+    padding: 0;
+
+    display: block;
+
+    overflow: hidden;
+
+    background-color: #F7F4EC;
+}
+
+
+/* =====================================================
+   COMPLETE MOOD IMAGE
+   ===================================================== */
+
+/*
+   IMPORTANT:
+
+   Do NOT use:
+   object-fit: cover;
+
+   cover crops the image.
+
+   We use width: 100% and height: auto
+   so the COMPLETE uploaded image is shown.
+*/
+
+#moodImage {
+    display: block !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-width: 0;
+
+    min-height: 0;
+
+    max-width: 100% !important;
+
+    max-height: none !important;
+
+    object-fit: contain !important;
+
+    object-position: center center;
+
+    margin: 0;
+
+    padding: 0;
+
+    background-color: #F7F4EC;
+
+    opacity: 1;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* =====================================================
+   RIGHT EXPERIENCE CONTENT
+   ===================================================== */
+
+.experience-content {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 55px 50px;
+
+    background-color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    align-self: stretch;
+}
+
+
+/* =====================================================
+   MOOD TITLE
+   ===================================================== */
+
+.experience-mood {
+    color: #1F6B4A;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   EXPERIENCE HEADING
+   ===================================================== */
+
+#experienceHeading {
+    color: #163A2A;
+
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin-bottom: 30px;
+}
+
+
+/* =====================================================
+   NATURE MESSAGE
+   ===================================================== */
+
+.nature-message {
+    width: 100%;
+
+    background-color: #DDECDD;
+
+    border-left: 5px solid #1F6B4A;
+
+    padding: 25px 28px;
+
+    border-radius: 0 15px 15px 0;
+
+    margin-bottom: 28px;
+}
+
+.nature-message p {
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   POEM BOX
+   ===================================================== */
+
+.poem-box {
+    width: 100%;
+
+    background-color: #F7F4EC;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    border: 1px solid #D9E4DB;
+}
+
+.poem-box h3 {
+    color: #163A2A;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+#poem {
+    white-space: pre-line;
+
+    color: #34483E;
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
+    margin: 0;
+}
+
+
+/* =====================================================
+   EXPLORE
+   ===================================================== */
+
+.explore-section {
+    padding: 90px 5%;
+
+    background-color: #FFFFFF;
+}
+
+.explore-category {
+    max-width: 1200px;
+
+    margin: 0 auto 65px;
+}
+
+.explore-category h3 {
+    color: #163A2A;
+
+    font-size: 30px;
+
+    margin-bottom: 25px;
+
+    text-align: center;
+}
+
+.explore-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.explore-grid img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.12);
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+
+.explore-grid img:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+.footer {
+    background-color: #163A2A;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.footer h3 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 7px 0;
+
+    color: #DCE9E0;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 1000px) {
+
+    .header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 18px 20px;
+    }
+
+    .navbar {
+        gap: 18px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .home-content h1 {
+        font-size: 48px;
+    }
+
+    .mood-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* IMAGE ABOVE CONTENT */
+
+    .experience-card {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-image {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        display: block;
+
+        overflow: hidden;
+    }
+
+    #moodImage {
+        width: 100% !important;
+
+        height: auto !important;
+
+        max-width: 100% !important;
+
+        max-height: none !important;
+
+        object-fit: contain !important;
+    }
+
+    .experience-content {
+        width: 100%;
+
+        padding: 45px 35px;
+    }
+
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px 12px;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .navbar {
+        width: 100%;
+
+        gap: 10px;
+
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+
+    /* HOME */
+
+    .home-section {
+        min-height: 560px;
+
+        padding: 50px 15px;
+    }
+
+    .home-content {
+        padding: 30px 20px;
+    }
+
+    .home-content h1 {
+        font-size: 38px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+
+    /* SECTIONS */
+
+    .mood-section,
+    .experience-section,
+    .explore-section {
+        padding: 65px 15px;
+    }
+
+    .section-heading h2,
+    .experience-heading h2 {
+        font-size: 30px;
+    }
+
+
+    /* MOODS */
+
+    .mood-container {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .mood-card {
+        padding: 25px 15px;
+    }
+
+
+    /* SITUATION */
+
+    .situation-box {
+        padding: 25px 18px;
+    }
+
+    .situation-box h3 {
+        font-size: 24px;
+    }
+
+
+    /* =================================================
+       MOBILE EXPERIENCE
+       ================================================= */
+
+    .experience-card {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        border-radius: 20px;
+    }
+
+    .experience-image {
+        width: 100%;
+
+        height: auto;
+
+        min-height: 0;
+
+        display: block;
+
+        overflow: hidden;
+
+        background-color: #F7F4EC;
+    }
+
+    #moodImage {
+        width: 100% !important;
+
+        height: auto !important;
+
+        min-height: 0;
+
+        max-width: 100% !important;
+
+        max-height: none !important;
+
+        display: block;
+
+        object-fit: contain !important;
+
+        object-position: center;
+    }
+
+    .experience-content {
+        width: 100%;
+
+        padding: 30px 20px;
+    }
+
+    #experienceHeading {
+        font-size: 30px;
+    }
+
+    .nature-message {
+        padding: 20px;
+    }
+
+    .nature-message p {
+        font-size: 17px;
+    }
+
+    #poem {
+        font-size: 17px;
+
+        line-height: 1.8;
+    }
+
+
+    /* EXPLORE */
+
+    .explore-category h3 {
+        font-size: 25px;
+    }
+
+    .explore-grid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .explore-grid img {
+        height: 230px;
+    }
+}
